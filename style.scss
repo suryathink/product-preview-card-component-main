@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  // border: 2px solid red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  // border: 2px solid black;
+  height: 550px;
+  width: 320px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.hero-image {
+  // border: 2px solid blue;
+  height: 40%;
+  img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
+.hero-content {
+  // border: 2px solid red;
+  height: 60%;
+  padding: 10px;
+}
+
+.perfume {
+  font-family: Montserrat;
+  color: #6c7289;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.heading-text {
+  color: #1c232b;
+  font-family: Fraunces;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+.floral-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6c7289;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  .original-price {
+    color: #3d8168;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+  }
+  .marked-price {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6c7289;
+  }
+}
+
+.hero-content {
+  // display: flex;
+  button {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ffffff;
+    width: 270px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Deep-Aquamarine, #3d8168);
+    margin-top: 15px;
+    // align-items: center;
+    // margin: auto;
+    // justify-content: center;
+    // margin-left: 20px;
+    margin:10px auto;
+    border: none;
+  }
+}
+// Attribution Styles
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
