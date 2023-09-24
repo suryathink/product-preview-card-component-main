@@ -20,7 +20,8 @@
   height: 550px;
   width: 320px;
   background: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .hero-image {
@@ -112,8 +113,16 @@
     // margin: auto;
     // justify-content: center;
     // margin-left: 20px;
-    margin:10px auto;
+    margin: 10px auto;
     border: none;
+  }
+}
+
+//  Media Queries
+@media only screen and (min-width: 421px) and (max-width: 1080px) {
+  .container {
+    border: 2px solid black;
+    height: 300px;
   }
 }
 // Attribution Styles

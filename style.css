@@ -4,107 +4,122 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background-color: hsl(30, 38%, 92%);
 }
 
-.container {
-  height: 550px;
-  width: 320px;
-  background: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
+@media only screen and (min-width: 1px) and (max-width: 720px) {
+  .main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.hero-image {
-  height: 40%;
-}
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
+  .container {
+    height: 550px;
+    width: 320px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
 
-.hero-content {
-  height: 60%;
-  padding: 10px;
-}
+  .hero-image {
+    height: 40%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
 
-.perfume {
-  font-family: Montserrat;
-  color: #6c7289;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
+  .hero-content {
+    height: 60%;
+    padding: 10px;
+    margin: 10px;
+  }
 
-.heading-text {
-  color: #1c232b;
-  font-family: Fraunces;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  margin-bottom: 15px;
-}
+  .perfume {
+    font-family: Montserrat;
+    color: #6c7289;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
 
-.floral-text {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  color: #6c7289;
-}
+  .heading-text {
+    color: #1c232b;
+    font-family: Fraunces;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
 
-.prices {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-.prices .original-price {
-  color: #3d8168;
-  font-family: Fraunces;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 100% */
-}
-.prices .marked-price {
-  font-family: Montserrat;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 23px;
-  color: #6c7289;
-}
+  .floral-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6c7289;
+  }
 
-.hero-content button {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #ffffff;
-  width: 270px;
-  height: 48px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: var(--Deep-Aquamarine, #3d8168);
-  margin-top: 15px;
-  margin: 10px auto;
-  border: none;
-}
+  .prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .prices .original-price {
+    color: #3d8168;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+  }
+  .prices .marked-price {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6c7289;
+  }
 
+  .hero-content button {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ffffff;
+    width: 270px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Deep-Aquamarine, #3d8168);
+    margin-top: 15px;
+    margin: 10px auto;
+    border: none;
+  }
+
+  button:hover {
+    background-color: hsl(212, 21%, 14%);
+    /* background-color: var(--Deep-Aquamarine, #3d8168); */
+  }
+}
+/* Attribution CSS */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -112,4 +127,126 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
+
+/* Media Queries for Larger screen */
+
+@media only screen and (min-width: 721px) and (max-width: 1400px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    height: 450px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    background: #ffffff;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+  }
+  .hero-image {
+    /* height: 100%; */
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .hero-content {
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+  }
+
+  .perfume {
+    font-family: Montserrat;
+    color: #6c7289;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+
+  .heading-text {
+    color: #1c232b;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    font-style: normal;
+  }
+
+  .floral-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    /* font-weight: 400; */
+    /* line-height: 20px; */
+    color: #6c7289;
+     padding-top: 10px;
+     padding-bottom: 10px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  .prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .prices .original-price {
+    color: #3d8168;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+  }
+  .prices .marked-price {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6c7289;
+  }
+
+  .hero-content button {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ffffff;
+    width: 235px;
+    height: 48px;
+    border-radius: 8px;
+    background: var(--Deep-Aquamarine, #3d8168);
+    margin-top: 25px;
+    border: none;
+  }
+
+  button:hover {
+    background-color: #1A4032;
+    /* background-color: var(--Deep-Aquamarine, #3d8168); */
+  }
+}
